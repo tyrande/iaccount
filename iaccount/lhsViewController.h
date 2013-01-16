@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface lhsViewController : UIViewController
+@interface lhsViewController : UITableViewController
 
 @end

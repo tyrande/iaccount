@@ -7,12 +7,30 @@
 //
 
 #import "lhsAppDelegate.h"
+#import "lhsSiteModel.h"
+#import "lhsAccountModel.h"
+#import "lhsAccountRelationModel.h"
+#import "lhsAccountFieldModel.h"
+#import "lhsAccountFieldRelationModel.h"
+
 
 @implementation lhsAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"everLaunched"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"everLaunched"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+        [lhsSiteModel create_table];
+        [lhsAccountModel create_table];
+        [lhsAccountRelationModel create_table];
+        [lhsAccountFieldModel create_table];
+        [lhsAccountFieldRelationModel create_table];
+    }
+    else{
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
+    }
     return YES;
 }
 							
@@ -24,6 +42,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    [[NSUserDefaults standardUserDefaults] synchronize];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
@@ -40,6 +59,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    [[NSUserDefaults standardUserDefaults] synchronize];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
