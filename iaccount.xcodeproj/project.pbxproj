@@ -55,6 +55,8 @@
 		83E5BB9B169AEFD800DB8D4B /* lhsAddSiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E5BB9A169AEFD800DB8D4B /* lhsAddSiteViewController.m */; };
 		83E5BB9F169AF1CA00DB8D4B /* lhsAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E5BB9E169AF1CA00DB8D4B /* lhsAccountModel.m */; };
 		83E5BBA2169AF20C00DB8D4B /* lhsAccountRelationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E5BBA1169AF20C00DB8D4B /* lhsAccountRelationModel.m */; };
+		83E602A716A6C057003493C0 /* lhsAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E602A616A6C057003493C0 /* lhsAccountViewController.m */; };
+		83E602AA16A6C08D003493C0 /* lhsAddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E602A916A6C08D003493C0 /* lhsAddAccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +159,10 @@
 		83E5BB9E169AF1CA00DB8D4B /* lhsAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhsAccountModel.m; sourceTree = "<group>"; };
 		83E5BBA0169AF20C00DB8D4B /* lhsAccountRelationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhsAccountRelationModel.h; sourceTree = "<group>"; };
 		83E5BBA1169AF20C00DB8D4B /* lhsAccountRelationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhsAccountRelationModel.m; sourceTree = "<group>"; };
+		83E602A516A6C057003493C0 /* lhsAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhsAccountViewController.h; sourceTree = "<group>"; };
+		83E602A616A6C057003493C0 /* lhsAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhsAccountViewController.m; sourceTree = "<group>"; };
+		83E602A816A6C08D003493C0 /* lhsAddAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhsAddAccountViewController.h; sourceTree = "<group>"; };
+		83E602A916A6C08D003493C0 /* lhsAddAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhsAddAccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +369,10 @@
 				83C047111699308C00DA41A8 /* lhsViewController.m */,
 				83E5BB99169AEFD800DB8D4B /* lhsAddSiteViewController.h */,
 				83E5BB9A169AEFD800DB8D4B /* lhsAddSiteViewController.m */,
+				83E602A516A6C057003493C0 /* lhsAccountViewController.h */,
+				83E602A616A6C057003493C0 /* lhsAccountViewController.m */,
+				83E602A816A6C08D003493C0 /* lhsAddAccountViewController.h */,
+				83E602A916A6C08D003493C0 /* lhsAddAccountViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -473,6 +483,8 @@
 				83E5BBA2169AF20C00DB8D4B /* lhsAccountRelationModel.m in Sources */,
 				83915D8D169C452500823D84 /* lhsAccountFieldModel.m in Sources */,
 				83915D91169C46D500823D84 /* lhsAccountFieldRelationModel.m in Sources */,
+				83E602A716A6C057003493C0 /* lhsAccountViewController.m in Sources */,
+				83E602AA16A6C08D003493C0 /* lhsAddAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,4 +17,5 @@
 + (void)create_table;
 + (id)create:(NSMutableArray*)aSiteArray;
 
+- (void)linkAccountWithId:(NSString*)accId;
 @end

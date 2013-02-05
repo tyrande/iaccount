@@ -22,6 +22,7 @@
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"everLaunched"]) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"everLaunched"];
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+        NSLog(@"-----------");
         [lhsSiteModel create_table];
         [lhsAccountModel create_table];
         [lhsAccountRelationModel create_table];

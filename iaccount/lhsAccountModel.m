@@ -47,7 +47,7 @@
     [lhsAccountFieldRelationModel createWithAccountID:self.lhsID fieldKey:fieldKey fieldValue:fieldValue];
 }
 
-- (void)addAccountWithId:(NSString*)accId {
+- (void)linkAccountWithId:(NSString*)accId {
     [lhsAccountRelationModel createWithAccountID:self.lhsID accAccountID:accId];
 }
 

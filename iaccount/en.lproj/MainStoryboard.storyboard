@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Lhs View Controller - Root View Controller-->
+        <!--Lhs Account View Controller - Root View Controller-->
         <scene sceneID="avi-l7-3vW">
             <objects>
-                <tableViewController id="Akg-FX-4fI" customClass="lhsViewController" sceneMemberID="viewController">
+                <tableViewController id="Akg-FX-4fI" customClass="lhsAccountViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="y0W-3J-F5R">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,8 +47,8 @@
         </scene>
     </scenes>
     <classes>
-        <class className="lhsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/lhsViewController.h"/>
+        <class className="lhsAccountViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/lhsAccountViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

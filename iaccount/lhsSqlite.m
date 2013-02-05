@@ -58,7 +58,7 @@
 }
 
 - (BOOL)executeSql:(NSString*) sql {
-    NSLog(@"Exec: %@", sql);
+//    NSLog(@"Exec: %@", sql);
     char *error;
     if (sqlite3_exec(databaseHandle, [sql UTF8String], NULL, NULL, &error) != SQLITE_OK) {
 //        sqlite3_close(databaseHandle);
